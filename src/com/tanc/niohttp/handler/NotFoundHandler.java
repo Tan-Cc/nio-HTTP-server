@@ -18,6 +18,5 @@ public class NotFoundHandler extends AbsHandler{
         response.setStatuCode(404);
         response.setStatuCodeStr("Not Found");
         response.setHtmlFile("F:\\javaProject\\nioHttp\\nioHttp\\404.html");
-
     }
 }

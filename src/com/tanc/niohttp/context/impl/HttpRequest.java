@@ -59,6 +59,11 @@ public class HttpRequest implements Request {
 
     private void initRequestHeaders(String[] strs){
         for (int i = 1; i < strs.length; i++) {
+            if (i == strs.length-2) continue;
+            if (i == strs.length-1) {
+                initAttribute(strs[i]);
+                break;
+            }
             String key = strs[i].substring(0,strs[i].indexOf(":"));
             String value = strs[i].substring(strs[i].indexOf(":")+1);
             headers.put(key,value);

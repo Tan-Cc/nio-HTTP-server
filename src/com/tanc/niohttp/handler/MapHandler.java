@@ -19,7 +19,7 @@ public class MapHandler {
             synchronized (MapHandler.class){
                 if (instance == null){
 
-                    instance = new MapHandler();
+/*                    instance = new MapHandler();
                     String urlpatten = "/login";
                     String classpath = "com.tanc.niohttp.handler.LoginHandler";
 
@@ -34,11 +34,11 @@ public class MapHandler {
                         e.printStackTrace();
                     } catch (InstantiationException e) {
                         e.printStackTrace();
-                    }
+                    }*/
 
 
-/*                    instance = new MapHandler();
-                    Element rootElement = XMLUtils.getRootElement("resource/web.xml");
+                    instance = new MapHandler();
+                    Element rootElement = XMLUtils.getRootElement("F:\\javaProject\\nioHttp\\nioHttp\\web.xml");
                     List<Element> handlers = XMLUtils.getElements(rootElement);
 
                     for(Element element : handlers){
@@ -60,7 +60,7 @@ public class MapHandler {
                         } catch (InstantiationException e) {
                             e.printStackTrace();
                         }
-                    }*/
+                    }
                 }
             }
         }
